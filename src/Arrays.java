@@ -141,7 +141,6 @@
             return -(low + 1); // Если ключ не найден, возвращаем отрицательное значение
         }
 
-// Методы для универсального типа с использованием Comparator
 
         public static <T> int binarySearch(T[] a, T key, Comparator<? super T> comparator) {
             return binarySearch(a, 0, a.length, key, comparator);
